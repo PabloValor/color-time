@@ -14,13 +14,12 @@ document.addEventListener("DOMContentLoaded", function(){
 			    	var _s 			= _date.getSeconds();			 
 		    		var total		= "";
 
-		    		hours.innerHTML 	= "# " + (_h < 10 ? "0" + _h : _h);
+		    		hours.innerHTML 	= (_h < 10 ? "0" + _h : _h);
 		    		minutes.innerHTML 	= (_m < 10 ? "0" + _m : _m);
 		    		seconds.innerHTML 	= (_s < 10 ? "0" + _s : _s);
 
 		    		total = (_h < 10 ? "0" + _h : _h) + (_m < 10 ? "0" + _m : _m) + (_s < 10 ? "0" + _s : _s);
 		    		document.body.style.backgroundColor = "#" + total;
-		    		console.log(document.body.style.backgroundColor);
 		    	},1000);
 
 		    }
@@ -31,5 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	watch.init();
 
 	modals.init();
+
+	console.log("ready!");
 });
 
