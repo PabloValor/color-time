@@ -27,13 +27,32 @@
 			    <p><a href="http://pablo-valor.herokuapp.com" target="_blank">Website (under construction)</a></p>
 			    	<p class="social">
 			    	<span>
-			    		<a href="https://www.facebook.com/pablo.valor.79" target="_blank">Facebook</a>
+			    		<!--Facebook stuff -->
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>
+						<!-- /Facebook stuff -->
 			    	</span>
 			    	<span>
-			    		<a href="https://twitter.com/Pablovalor" target="_blank">Twitter</a>
+			    		<!--Twitter stuff -->
+						<a href="https://twitter.com/pablovalor" class="twitter-follow-button" data-show-count="false">Follow @pablovalor</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						<!-- /Twitter stuff -->
 			    	</span>
 			    	<span>
-			    		<a href="https://plus.google.com/109573404958606765968" target="_blank">Google+</a>
+			    		<!--googleplus stuff -->
+						<!-- Place this tag in your head or just before your close body tag. -->
+						<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+						<!-- Place this tag where you want the widget to render. -->
+						<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/109573404958606765968" data-rel="author"></div>
+						<!--/googleplus stuff -->
 			    	</span>
 			    </p>
 			</div>			
