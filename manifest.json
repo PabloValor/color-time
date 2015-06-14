@@ -1,0 +1,11 @@
+{
+  "name": "Color Time",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "An hexadecimal watch that changes the background color property for each second.",
+  "icons": { "128": "icon_128.png" },
+  "permissions": ["tabs"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

@@ -12,14 +12,16 @@ document.addEventListener("DOMContentLoaded", function(){
 			    	var _h 			= _date.getHours();
 			    	var _m 			= _date.getMinutes();
 			    	var _s 			= _date.getSeconds();			 
-		    		var total		= "";
 
-		    		hours.innerHTML 	= (_h < 10 ? "0" + _h : _h);
-		    		minutes.innerHTML 	= (_m < 10 ? "0" + _m : _m);
-		    		seconds.innerHTML 	= (_s < 10 ? "0" + _s : _s);
+		    		_h = (_h < 10 ? "0" + _h : _h);
+		    		_m = (_m < 10 ? "0" + _m : _m);
+		    		_s = (_s < 10 ? "0" + _s : _s);
 
-		    		total = (_h < 10 ? "0" + _h : _h) + (_m < 10 ? "0" + _m : _m) + (_s < 10 ? "0" + _s : _s);
-		    		document.body.style.backgroundColor = "#" + total;
+		    		hours.innerHTML 	= _h
+		    		minutes.innerHTML 	= _m
+		    		seconds.innerHTML 	= _s
+
+		    		document.body.style.backgroundColor = "#" + _h + _m + _s;
 		    	},1000);
 
 		    }
